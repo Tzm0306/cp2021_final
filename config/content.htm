@@ -816,7 +816,7 @@ doc["tenpositions"].bind('click', tenpositions.do)
 <h2>1bg2</h2>
 <h2>1bg3</h2>
 <h3>41023253</h3>
-<p><a href="/downloads/w12demo.txt"></a></p>
+<p><a href="/downloads/w12.txt"></a></p>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -855,7 +855,7 @@ function doSave(storage_id, filename){
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
-<p><button id="add1to100">add 1 to 100</button><button id="紅點">紅點</button><button id="紅點含移動">紅點含移動</button><button id="貪食蛇">貪食蛇</button><button id="貪食蛇2">貪食蛇2</button><button id="W13">W13</button></p>
+<p><button id="add1to100">add 1 to 100</button><button id="a">紅點加移動</button><button id="貪食蛇">貪食蛇</button><button id="w13_1">w13_1</button><button id="w13_2">w13_2</button><button id="h">final 1</button><button id="g">final 2</button></p>
 <p><!-- ######################  editor1 開始 ###################### --></p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
@@ -940,31 +940,34 @@ class button2:
 add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
 add1to100 = button2(add1to100_url)
 doc["add1to100"].bind('click', add1to100.do)
-################################# p261 start 
-紅點_url = "https://gist.githubusercontent.com/Tzm0306/e66a0f2b687fe604f121f6ebd01afd01/raw/f3c0bd928a8e156f570c8b427778cc73d848a5a1/version.py"
-紅點 = button2(紅點_url)
-doc["紅點"].bind('click', 紅點.do)
-################################## 紅點 end
-################################## 紅點含移動 start
-紅點含移動_url = "https://gist.githubusercontent.com/41023226/0f153384b24b598e859edcbb7f68852a/raw/e015ff3f9571cc777ecf18e4dc64810d89a7d39c/cp2021%2520w1%2520(1)"
-紅點含移動 = button2(紅點含移動_url)
-doc["紅點含移動"].bind("click", 紅點含移動.do)
-################################## 紅點含移動 end
+################################# a start 
+a_url = "https://gist.githubusercontent.com/Tzm0306/5b8f5d02e405292a2ff2ab2592cebf94/raw/11e973109f05f9233d623cb13171800826de1a93/%25E7%25B4%2585%25E9%25BB%259E%25E5%2590%25AB%25E7%25A7%25BB%25E5%258B%2595.py"
+a = button2(a_url)
+doc["a"].bind('click', a.do)
+################################## a end
 ################################## 貪食蛇 start
-貪食蛇_url = "https://gist.githubusercontent.com/Tzm0306/abf8105dd7709e12828acec37374a699/raw/8e77b485404e3cfd8076c0c160803bbd40ef86ed/%25E8%25B2%25AA%25E9%25A3%259F%25E8%259B%2587"
+貪食蛇_url = "https://gist.githubusercontent.com/Tzm0306/845bfb150e0259e1540cd601bc06b0a9/raw/3df7433e359704e98a403dbb6235129bbc942ba6/%25E8%25B2%25AA%25E9%25A3%259F%25E8%259B%2587.py"
 貪食蛇 = button2(貪食蛇_url)
 doc["貪食蛇"].bind("click", 貪食蛇.do)
 ################################## 貪食蛇 end
-################################## 貪食蛇2 start
-貪食蛇2_url = "https://gist.githubusercontent.com/Tzm0306/19468ae867b5d15ed2ceb36db1c615de/raw/d9d9339ee99949883439408a77832ab87e24ba66/%25E8%25B2%25AA%25E9%25A3%259F%25E8%259B%25872"
-貪食蛇2 = button2(貪食蛇2_url)
-doc["貪食蛇2"].bind("click", 貪食蛇2.do)
-################################## 貪食蛇2 end
-################################## W13 start
-W13_url = "https://gist.githubusercontent.com/Tzm0306/013fe11d356570ea7de8417188252d9a/raw/9498973bd3bb266299d76ed5c239ff8d1389f3b2/W13"
-W13 = button2(W13_url)
-doc["W13"].bind("click", W13.do)
-################################## W13 end
+################################# w13_1start 
+w13_1_url = "https://gist.githubusercontent.com/ziyi8/a1b4939d8137eab6e153a5f95e500fe4/raw/4e280636a515089c1c834821e2d0164f38d160e2/w13_1.py"
+w13_1 = button2(w13_1_url)
+doc["w13_1"].bind('click', w13_1.do)
+################################## w13_1 end
+################################# w13_2start 
+w13_2_url = "https://gist.githubusercontent.com/ziyi8/a1b4939d8137eab6e153a5f95e500fe4/raw/4e280636a515089c1c834821e2d0164f38d160e2/w13_2.py"
+w13_2 = button2(w13_2_url)
+doc["w13_2"].bind('click', w13_2.do)
+################################## w13_2 end
+h_url = "https://gist.githubusercontent.com/Tzm0306/c97049e060c87e5e3d8fe5477cda063c/raw/c349d9e30689a67abb2873f684d408860bd5d1f4/final%25201.py"
+h = button2(h_url)
+doc["h"].bind('click', h.do)
+################################## h end
+g_url = "https://gist.githubusercontent.com/Tzm0306/c8a0350bf9c8bb23dc94d318f72e1e96/raw/70da5f79b49599e49301cf3cfa1b78cece7072f4/final%25202.py"
+g = button2(g_url)
+doc["g"].bind('click', g.do)
+################################## g end
 </script>
 </p><h3>41023208</h3>
 <p><a href="/downloads/w12.txt">w12.txt</a></p>
